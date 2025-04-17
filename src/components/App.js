@@ -7,8 +7,7 @@ import ImageToArticle from './ImageToArticle';
 const App = () => {
   return (
     <div>
-      <ImageToArticle/>
-      <ImageUpload/>
+      
       <RecentArticles/>
     </div>
   );
