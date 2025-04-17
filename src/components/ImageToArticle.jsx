@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import '../css/ImageToArticle.css';
 
 const ImageToArticle = () => {
@@ -7,25 +7,36 @@ const ImageToArticle = () => {
   const [jsonData, setJsonData] = useState(null);
   const [fileName, setFileName] = useState("");
   const [apiKey, setApiKey] = useState("");
-  const [errorMessage, setErrorMessage] = useState(""); // State for error message
+  const [errorMessage, setErrorMessage] = useState("");
+  const fileInputRef = useRef(null); // Ref for file input
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
-    setFileName(file?.name || "");
-    if (file && file.type === "application/json") {
+    if (!file) return;
+
+    const isJsonFile =
+      file.type === "application/json" ||
+      file.name.toLowerCase().endsWith(".json");
+
+    if (isJsonFile) {
       const reader = new FileReader();
       reader.onload = (event) => {
         try {
           const parsedJson = JSON.parse(event.target.result);
           setJsonData(parsedJson);
+          setFileName(file.name);
         } catch (error) {
           console.error("Invalid JSON file:", error);
           alert("The uploaded file is not a valid JSON.");
+          fileInputRef.current.value = ""; // Clear input
+          setFileName("");
         }
       };
       reader.readAsText(file);
     } else {
       alert("Please upload a valid JSON file.");
+      fileInputRef.current.value = ""; // Clear input
+      setFileName("");
     }
   };
 
@@ -39,7 +50,7 @@ const ImageToArticle = () => {
       return;
     }
 
-    setErrorMessage(""); // Reset error message
+    setErrorMessage("");
     setLoading(true);
     try {
       const message = `Write a short article based on the following image labels:\n\n${JSON.stringify(jsonData, null, 2)}`;
@@ -55,19 +66,17 @@ const ImageToArticle = () => {
 
       const data = await res.json();
 
-      // Check if the response contains an error
       if (data.error) {
         setErrorMessage("Invalid API key or error generating article.");
-        return; // Don't proceed with article generation
+        return;
       }
 
-      // Proceed to generate article if no error
       const newArticle = {
         title: data.title || "Article Title Here",
         description: data.content || "Something poetic was meant to be here.",
         category: "Sports",
         date: new Date().toLocaleDateString(),
-        imageUrl: "./images/basketball.png", // Replace with dynamic if needed
+        imageUrl: "./images/basketball.png",
       };
 
       setArticles((prev) => [newArticle, ...prev]);
@@ -100,16 +109,17 @@ const ImageToArticle = () => {
           Click the "Download JSON" button above to download the JSON file, then attach the file below.
         </p>
         <p className="text-muted mb-2">
-          You may also attach different JSON file that contains bounding box of detected objects in the image.
+          You may also attach a different JSON file that contains bounding box data.
         </p>
 
         <input
           type="file"
-          accept=".json"
           onChange={handleFileUpload}
+          ref={fileInputRef}
           className="form-control mb-2"
         />
         {fileName && <p className="text-muted">Loaded: {fileName}</p>}
+
         <input
           type="text"
           className="form-control mb-3"
@@ -126,7 +136,6 @@ const ImageToArticle = () => {
           {loading ? 'Generating...' : 'Generate Article'}
         </button>
 
-        {/* Display error message if any */}
         {errorMessage && (
           <div className="alert alert-danger mt-3" role="alert">
             {errorMessage}
