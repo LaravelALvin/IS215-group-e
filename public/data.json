@@ -1,0 +1,843 @@
+ {
+  "Labels": [
+    {
+      "Name": "Ball",
+      "Confidence": 99.66793060302734,
+      "Instances": [],
+      "Parents": [],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Sports"
+        }
+      ]
+    },
+    {
+      "Name": "Basketball",
+      "Confidence": 99.66793060302734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Sports"
+        }
+      ]
+    },
+    {
+      "Name": "Basketball (Ball)",
+      "Confidence": 99.66793060302734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08579053729772568,
+            "Height": 0.12747779488563538,
+            "Left": 0.7804648280143738,
+            "Top": 0.48197314143180847
+          },
+          "Confidence": 99.66793060302734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Ball"
+        },
+        {
+          "Name": "Basketball"
+        },
+        {
+          "Name": "Sport"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Sports"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 99.66793060302734,
+      "Instances": [],
+      "Parents": [],
+      "Aliases": [
+        {
+          "Name": "Sports"
+        }
+      ],
+      "Categories": [
+        {
+          "Name": "Sports"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.97306060791016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12109363079071045,
+            "Height": 0.17207610607147217,
+            "Left": 0.051352184265851974,
+            "Top": 0.2500178813934326
+          },
+          "Confidence": 95.891845703125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05368145555257797,
+            "Height": 0.16653181612491608,
+            "Left": 0,
+            "Top": 0.25045228004455566
+          },
+          "Confidence": 94.99518585205078
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4866122305393219,
+            "Height": 0.8430636525154114,
+            "Left": 0.051573872566223145,
+            "Top": 0.14347712695598602
+          },
+          "Confidence": 94.0497055053711
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08960392326116562,
+            "Height": 0.14083713293075562,
+            "Left": 0.1223137155175209,
+            "Top": 0.0062784720212221146
+          },
+          "Confidence": 92.22007751464844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0981193408370018,
+            "Height": 0.14947479963302612,
+            "Left": 0.15966686606407166,
+            "Top": 0.09428699314594269
+          },
+          "Confidence": 91.97996520996094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09431438148021698,
+            "Height": 0.13471999764442444,
+            "Left": 0.8306134343147278,
+            "Top": 0.2532271444797516
+          },
+          "Confidence": 91.41973114013672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0690074935555458,
+            "Height": 0.10959731787443161,
+            "Left": 0.8452707529067993,
+            "Top": 0.05701815336942673
+          },
+          "Confidence": 88.90392303466797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07545509189367294,
+            "Height": 0.15451356768608093,
+            "Left": 0.9133137464523315,
+            "Top": 0.047226447612047195
+          },
+          "Confidence": 88.0606460571289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06822528690099716,
+            "Height": 0.12269377708435059,
+            "Left": 0.7956782579421997,
+            "Top": 0.05348198488354683
+          },
+          "Confidence": 86.78582763671875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08457286655902863,
+            "Height": 0.17260976135730743,
+            "Left": 0.1765069216489792,
+            "Top": 0.2016954869031906
+          },
+          "Confidence": 86.13906860351562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08531484752893448,
+            "Height": 0.15696607530117035,
+            "Left": 0.27192893624305725,
+            "Top": 0.0004922151565551758
+          },
+          "Confidence": 85.14122009277344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08782170712947845,
+            "Height": 0.12934240698814392,
+            "Left": 0.07767994701862335,
+            "Top": 0.18965937197208405
+          },
+          "Confidence": 84.87474060058594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04220724105834961,
+            "Height": 0.07472098618745804,
+            "Left": 0.9152971506118774,
+            "Top": 0.14474725723266602
+          },
+          "Confidence": 84.11302185058594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08531169593334198,
+            "Height": 0.12440776079893112,
+            "Left": 0.8491706848144531,
+            "Top": 0.12216239422559738
+          },
+          "Confidence": 83.77046203613281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06839294731616974,
+            "Height": 0.15305089950561523,
+            "Left": 0.9213612675666809,
+            "Top": 0.25371894240379333
+          },
+          "Confidence": 83.61251068115234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05283718556165695,
+            "Height": 0.13299930095672607,
+            "Left": 0.030149828642606735,
+            "Top": 0.18874280154705048
+          },
+          "Confidence": 83.3239517211914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05517325550317764,
+            "Height": 0.11224596202373505,
+            "Left": 0.7186290621757507,
+            "Top": 0.05100993439555168
+          },
+          "Confidence": 79.45854949951172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028629779815673828,
+            "Height": 0.10706531256437302,
+            "Left": 0.9710903167724609,
+            "Top": 0.05315077304840088
+          },
+          "Confidence": 77.09439849853516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05884454399347305,
+            "Height": 0.13172157108783722,
+            "Left": 0.23601427674293518,
+            "Top": 0.10089148581027985
+          },
+          "Confidence": 76.3827896118164
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.41200166940689087,
+            "Height": 0.7827649116516113,
+            "Left": 0.4451344907283783,
+            "Top": 0.18166255950927734
+          },
+          "Confidence": 73.74698638916016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08749942481517792,
+            "Height": 0.12914928793907166,
+            "Left": 0.3486855924129486,
+            "Top": 0.009274901822209358
+          },
+          "Confidence": 72.1944351196289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0841921791434288,
+            "Height": 0.12140102684497833,
+            "Left": 0.6056802868843079,
+            "Top": 0.05163811147212982
+          },
+          "Confidence": 71.6845703125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08881191909313202,
+            "Height": 0.16125036776065826,
+            "Left": 0.7362273931503296,
+            "Top": 0.11363491415977478
+          },
+          "Confidence": 69.71249389648438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06279821693897247,
+            "Height": 0.12180477380752563,
+            "Left": 0.8753114938735962,
+            "Top": 0.19806569814682007
+          },
+          "Confidence": 69.61465454101562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0524839386343956,
+            "Height": 0.14163681864738464,
+            "Left": 0.8227924108505249,
+            "Top": 0.18615251779556274
+          },
+          "Confidence": 68.00582122802734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07277445495128632,
+            "Height": 0.10756294429302216,
+            "Left": 0.6607133150100708,
+            "Top": 0.049355559051036835
+          },
+          "Confidence": 67.0291748046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09489460289478302,
+            "Height": 0.1640859842300415,
+            "Left": 0.47526878118515015,
+            "Top": 0.03170802816748619
+          },
+          "Confidence": 66.7932357788086
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08325529098510742,
+            "Height": 0.16723990440368652,
+            "Left": 0.6678239703178406,
+            "Top": 0.1026393249630928
+          },
+          "Confidence": 65.40406036376953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07023296505212784,
+            "Height": 0.4064573049545288,
+            "Left": 0.6935709714889526,
+            "Top": 0.24504871666431427
+          },
+          "Confidence": 58.932228088378906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04966173321008682,
+            "Height": 0.11908233910799026,
+            "Left": 0.4007337987422943,
+            "Top": 0.10403464734554291
+          },
+          "Confidence": 58.91106033325195
+        }
+      ],
+      "Parents": [],
+      "Aliases": [
+        {
+          "Name": "Human"
+        }
+      ],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Playing Basketball",
+      "Confidence": 98.97306060791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Basketball"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Sport"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Actions"
+        }
+      ]
+    },
+    {
+      "Name": "Basketball Game",
+      "Confidence": 98.2469711303711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Basketball"
+        },
+        {
+          "Name": "Sport"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Sports"
+        }
+      ]
+    },
+    {
+      "Name": "Adult",
+      "Confidence": 95.891845703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12109363079071045,
+            "Height": 0.17207610607147217,
+            "Left": 0.051352184265851974,
+            "Top": 0.2500178813934326
+          },
+          "Confidence": 95.891845703125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Male",
+      "Confidence": 95.891845703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12109363079071045,
+            "Height": 0.17207610607147217,
+            "Left": 0.051352184265851974,
+            "Top": 0.2500178813934326
+          },
+          "Confidence": 95.891845703125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.41200166940689087,
+            "Height": 0.7827649116516113,
+            "Left": 0.4451344907283783,
+            "Top": 0.18166255950927734
+          },
+          "Confidence": 73.74698638916016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Man",
+      "Confidence": 95.891845703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12109363079071045,
+            "Height": 0.17207610607147217,
+            "Left": 0.051352184265851974,
+            "Top": 0.2500178813934326
+          },
+          "Confidence": 95.891845703125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Adult"
+        },
+        {
+          "Name": "Male"
+        },
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 90.551025390625,
+      "Instances": [],
+      "Parents": [],
+      "Aliases": [
+        {
+          "Name": "Apparel"
+        }
+      ],
+      "Categories": [
+        {
+          "Name": "Apparel and Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Hat",
+      "Confidence": 90.551025390625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.031905125826597214,
+            "Height": 0.030701523646712303,
+            "Left": 0.194737046957016,
+            "Top": 0.09523724764585495
+          },
+          "Confidence": 90.551025390625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Apparel and Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 88.52838134765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Head"
+        },
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Head",
+      "Confidence": 88.52838134765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Accessories",
+      "Confidence": 84.78559875488281,
+      "Instances": [],
+      "Parents": [],
+      "Aliases": [
+        {
+          "Name": "Accessory"
+        }
+      ],
+      "Categories": [
+        {
+          "Name": "Apparel and Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Glasses",
+      "Confidence": 84.78559875488281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.022960472851991653,
+            "Height": 0.013321406207978725,
+            "Left": 0.8443527221679688,
+            "Top": 0.2099488228559494
+          },
+          "Confidence": 84.78559875488281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0204519834369421,
+            "Height": 0.0202298816293478,
+            "Left": 0.040921323001384735,
+            "Top": 0.20304030179977417
+          },
+          "Confidence": 82.49728393554688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029744625091552734,
+            "Height": 0.014882543124258518,
+            "Left": 0.864386260509491,
+            "Top": 0.2842530608177185
+          },
+          "Confidence": 73.758056640625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Accessories"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Apparel and Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Computer",
+      "Confidence": 75.43457794189453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electronics"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Technology and Computing"
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Confidence": 75.43457794189453,
+      "Instances": [],
+      "Parents": [],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Technology and Computing"
+        }
+      ]
+    },
+    {
+      "Name": "Laptop",
+      "Confidence": 75.43457794189453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10117403417825699,
+            "Height": 0.024225840345025063,
+            "Left": 0.028544414788484573,
+            "Top": 0.40577223896980286
+          },
+          "Confidence": 75.43457794189453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Computer"
+        },
+        {
+          "Name": "Electronics"
+        },
+        {
+          "Name": "Pc"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Technology and Computing"
+        }
+      ]
+    },
+    {
+      "Name": "Pc",
+      "Confidence": 75.43457794189453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Computer"
+        },
+        {
+          "Name": "Electronics"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Technology and Computing"
+        }
+      ]
+    },
+    {
+      "Name": "Boy",
+      "Confidence": 73.74698638916016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.41200166940689087,
+            "Height": 0.7827649116516113,
+            "Left": 0.4451344907283783,
+            "Top": 0.18166255950927734
+          },
+          "Confidence": 73.74698638916016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Male"
+        },
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Teen",
+      "Confidence": 73.74698638916016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.41200166940689087,
+            "Height": 0.7827649116516113,
+            "Left": 0.4451344907283783,
+            "Top": 0.18166255950927734
+          },
+          "Confidence": 73.74698638916016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    },
+    {
+      "Name": "Footwear",
+      "Confidence": 70.31167602539062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Apparel and Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Shoe",
+      "Confidence": 70.31167602539062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09126706421375275,
+            "Height": 0.10653246194124222,
+            "Left": 0.14886686205863953,
+            "Top": 0.8457176685333252
+          },
+          "Confidence": 70.31167602539062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09083113819360733,
+            "Height": 0.07384917885065079,
+            "Left": 0.11744873225688934,
+            "Top": 0.9213795065879822
+          },
+          "Confidence": 66.56964111328125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        },
+        {
+          "Name": "Footwear"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Apparel and Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 57.82760238647461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ],
+      "Aliases": [],
+      "Categories": [
+        {
+          "Name": "Person Description"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "3.0"
+}
