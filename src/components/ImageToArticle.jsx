@@ -146,15 +146,15 @@ const ImageToArticle = () => {
       <div className="row g-3">
         <div className={`articles-wrapper ${loading ? 'shifted' : ''}`}>
           {loading && (
-            <div className="col-md-4">
-              <div className="card p-3 shadow-sm h-100">
-                <div className="skeleton skeleton-card-img mb-2" />
-                <div className="skeleton skeleton-title mb-2" />
-                <div className="skeleton skeleton-text mb-1" />
-                <div className="skeleton skeleton-text mb-2" />
-                <div className="skeleton skeleton-link" />
-              </div>
+            <div className="card-wrapper">
+            <div className="card p-3 shadow-sm h-100">
+              <div className="skeleton skeleton-card-img mb-2" />
+              <div className="skeleton skeleton-title mb-2" />
+              <div className="skeleton skeleton-text mb-1" />
+              <div className="skeleton skeleton-text mb-2" />
+              <div className="skeleton skeleton-link" />
             </div>
+          </div>
           )}
 
           {articles.map((article, index) => (

@@ -1,52 +1,60 @@
-/* Add this CSS for shifting articles and displaying the skeleton loader */
-.articles-wrapper {
+/* Wrapper for each card */
+.card-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* When loading, shift articles to the right */
-.articles-wrapper.shifted {
-  transform: translateX(100px); /* Shift articles to the right when loading */
-}
-
+/* Each card */
 .card {
-  position: relative;
+  width: 100%; /* Ensures the card takes full width */
+  max-width: 300px; /* Adjust to desired card max width */
+  padding: 1rem; /* Padding for spacing */
+  box-sizing: border-box; /* Prevents overflow */
+  margin: 0.5rem; /* Optional margin to space out cards */
 }
 
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%; /* Full width on mobile */
+  }
+}
+
+/* Skeleton styles */
 .skeleton {
   background: #ddd;
   border-radius: 4px;
   animation: shimmer 1.5s infinite linear;
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
+  width: 100%; /* Make skeleton elements full width */
+  box-sizing: border-box; /* Prevent overflow */
 }
 
+/* Skeleton elements */
 .skeleton-card-img {
-  width: 100%;
   height: 180px;
   margin-bottom: 10px;
 }
 
 .skeleton-title {
-  width: 80%;
   height: 20px;
   margin-bottom: 10px;
 }
 
 .skeleton-text {
-  width: 100%;
   height: 14px;
   margin-bottom: 6px;
 }
 
 .skeleton-link {
-  width: 60%;
   height: 14px;
+  width: 60%; /* Can adjust to your design */
 }
 
-/* Shimmer Effect */
+/* Shimmer Animation */
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
